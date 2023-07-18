@@ -5,6 +5,8 @@ https://github.com/Aakashdeveloper >>> Follow
 https://git-scm.com/downloads >>> Install
 https://www.mongodb.com/try/download/community > Install
 
+https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh
+
 //extension
 vscode-icons
 tabnine
@@ -26,12 +28,10 @@ Redis Cloud
 Redisv4 With Mongov5
 ImageUpload
 ImageUpload(formidable)
-/////////////
-
-
 MongoDb Basic >27017  (local/cloud)
 Zomato App backend
 Api with NodeJS(Rest)>1
+/////////////
 DashBoard(Crud)
 Swagger
 Testing
@@ -282,3 +282,7 @@ D > Delete
 
 CORS
 Cross origin resource sharing .
+
+
+npm i chai chai-http mocha --save-dev
+npm i body-parser cors ejs express mongodb swagger-jsdoc swagger-ui-express
