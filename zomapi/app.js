@@ -123,6 +123,20 @@ app.get('/orders',async(req,res) => {
     res.send(output)
 })
 
+//menu details {"id":[4,7,9]}
+app.post('/menuDetails',async(req,res) => {
+    if(Array.isArray(req.body.id)){
+        let query = {menu_id:{$in:req.body.id}};
+        let collection = 'menu';
+        let output = await getData(collection,query);
+        res.send(output)
+    }else{
+        res.send('Please pass data in format of {"id":[4,7,9]}')
+    }
+})
+
+
+
 //placeOrder
 app.post('/placeOrder',async(req,res) => {
     let data = req.body;
