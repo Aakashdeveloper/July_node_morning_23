@@ -1,0 +1,26 @@
+{
+    "openapi":"3.0.0",
+    "info":{
+        "description":"This is the api for users"
+    },
+    "tags":[
+        {
+            "name":"PUBLIC ROUTE",
+            "description":"Public Route"
+        }
+    ],
+    "paths":{
+        "/health":{
+            "summary":"Testing User Check",
+            "get":{
+                "description":"User Api Health Check",
+                "tags":["PUBLIC ROUTE"],
+                "responses":{
+                    "200":{
+                        "description":"User Health Pass"
+                    }
+                }
+            }
+        }
+    }
+}
