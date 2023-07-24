@@ -21,6 +21,146 @@
                     }
                 }
             }
+        },
+        "/users":{
+            "summary":"Testing User Routes",
+            "get":{
+                "description":"User Api Health Check",
+                "tags":["PUBLIC ROUTE"],
+                "parameters":[
+                    {
+                        "in":"query",
+                        "name":"role",
+                        "schema":{
+                            "type":"string"
+                        },
+                        "description":"Choose role as admin or user"
+                    },
+                    {
+                        "in":"query",
+                        "name":"city",
+                        "schema":{
+                            "type":"string"
+                        },
+                        "description":"Enter User City"
+                    }
+                ],
+                "responses":{
+                    "200":{
+                        "description":"User Health Pass"
+                    }
+                }
+            }
+        },
+        "/user/{id}":{
+            "summary":"Testing User Details",
+            "get":{
+                "description":"User Api Health Check",
+                "tags":["PUBLIC ROUTE"],
+                "parameters":[
+                    {
+                        "in":"path",
+                        "name":"id",
+                        "required":true,
+                        "schema":{
+                            "type":"string"
+                        },
+                        "description":"Choose role as admin or user"
+                    }
+                ],
+                "responses":{
+                    "200":{
+                        "description":"User Health Pass"
+                    }
+                }
+            }
+        },
+        "/addUser":{
+            "summary":"Testing Add User Route",
+            "post":{
+                "description":"Testing Add User Route for the app",
+                "tags":["PUBLIC ROUTE"],
+                "requestBody":{
+                    "required":true,
+                    "content":{
+                        "application/json":{
+                            "schema":{
+                                "type": "object",
+                                "id":"string"
+                            },
+                            "example":{
+                                "name":"July Test",
+                                "city":"Delhi",
+                                "phone":5436436454,
+                                "role":"User",
+                                "isActive":true
+                            }
+                        }
+                    }
+                },
+                "responses":{
+                    "200":{
+                        "description":"User Health Pass"
+                    }
+                }
+            }
+        },
+        "/updateUser":{
+            "summary":"Testing  User update Route",
+            "put":{
+                "description":"Testing Update User Route for the app",
+                "tags":["PUBLIC ROUTE"],
+                "requestBody":{
+                    "required":true,
+                    "content":{
+                        "application/json":{
+                            "schema":{
+                                "type": "object",
+                                "id":"string"
+                            },
+                            "example":{
+                                "_id":"",
+                                "name":"July Test",
+                                "city":"Delhi",
+                                "phone":5436436454,
+                                "role":"User",
+                                "isActive":true
+                            }
+                        }
+                    }
+                },
+                "responses":{
+                    "200":{
+                        "description":"User Health Pass"
+                    }
+                }
+            }
+        },
+        "/deleteUser":{
+            "summary":"Testing  User update Route",
+            "delete":{
+                "description":"Testing Delete User Route for the app",
+                "tags":["PUBLIC ROUTE"],
+                "requestBody":{
+                    "required":true,
+                    "content":{
+                        "application/json":{
+                            "schema":{
+                                "type": "object",
+                                "id":"string"
+                            },
+                            "example":{
+                                "_id":""
+                            }
+                        }
+                    }
+                },
+                "responses":{
+                    "200":{
+                        "description":"User Health Pass"
+                    }
+                }
+            }
         }
     }
 }
