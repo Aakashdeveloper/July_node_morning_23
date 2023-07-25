@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node apiwithoutUi.js",
+    "start": "node apiwithUi.js",
     "dev": "nodemon apiwithoutUi.js",
-    "test":"mocha --timeout 10000"
+    "test":"mocha --timeout 10000",
+    "ui": "nodemon apiwithUi.js",
+    "noui":"nodemon apiwithoutUi.js"
   },
   "keywords": [],
   "author": "",
