@@ -35,30 +35,34 @@ Api with NodeJS(Rest)>1
 DashBoard(Crud)
 Swagger
 Testing
-/////////////
 Github
 --Deployment of app---
 render
 Pm2
+/////////////
 Nginx
 Jenkins
 Docker
-
 Email With Node(nodemailer)
-TelegramChat
 
+
+TelegramChat
 S3 Imageupload
+
 Login/Logout(JWT)
 
 Oauth(with github) (https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps)
+
 Oauth(with google)
+
 
 GraphQl API
 Paytm-Payment
+
 Chatapp
 NodeJs with postgres
-FIREBASE
 
+FIREBASE
 AWS lambda micorservice
 --------NOT---------
 React/Angular
@@ -291,3 +295,11 @@ Cross origin resource sharing .
 
 npm i chai chai-http mocha --save-dev
 npm i body-parser cors ejs express mongodb swagger-jsdoc swagger-ui-express
+
+npm i -g pm2
+
+pm2 start filename
+pm2 status
+pm2 stop filename
+
+pm2 start filename -i processNumber

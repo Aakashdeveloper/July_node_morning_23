@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const {MongoClient} =  require('mongodb');
 const Mongo = require('mongodb');
-const url = "mongodb+srv://local:test12345@cluster0.f8vmc.mongodb.net/augintern?retryWrites=true&w=majority";
+const url = "mongodb://127.0.0.1:27017";
 const client = new MongoClient(url)
 async function main(){
     await client.connect()
