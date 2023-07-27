@@ -39,13 +39,11 @@ Github
 --Deployment of app---
 render
 Pm2
-/////////////
 Nginx
 Jenkins
-Docker
 Email With Node(nodemailer)
-
-
+/////////////
+Docker
 TelegramChat
 S3 Imageupload
 
