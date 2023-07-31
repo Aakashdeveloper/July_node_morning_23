@@ -42,11 +42,10 @@ Pm2
 Nginx
 Jenkins
 Email With Node(nodemailer)
-/////////////
 Docker
 TelegramChat
 S3 Imageupload
-
+/////////////
 Login/Logout(JWT)
 
 Oauth(with github) (https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps)

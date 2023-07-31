@@ -15,14 +15,14 @@ const UploadFile = () => {
         const params = {
             Bucket:'augweb',
             Key:`${Date.now().toString()} - ${fileName}`,
-            Body: JSON.stringify(data,null,2)
+            Body:JSON.stringify(data,null,2)
         }
         s3.upload(params,function(err,data){
             if(err) throw err;
             console.log('File Uploaded')
-            console.log(data.Location)
         })
     })
+
 }
 
 
