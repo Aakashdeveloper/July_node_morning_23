@@ -46,11 +46,11 @@ Docker
 TelegramChat
 S3 Imageupload
 Login/Logout(JWT)
-Oauth(with github) (https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps)
-/////////////
+Oauth(with github) (https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/
+authorizing-oauth-apps)
 Oauth(with google)
+/////////////
 GraphQl API
-
 Paytm-Payment
 
 Chatapp
@@ -297,3 +297,10 @@ pm2 status
 pm2 stop filename
 
 pm2 start filename -i processNumber
+
+////dummy api
+install global package
+>> npm i -g json-server
+
+
+json-server --watch db.json --port 9811
