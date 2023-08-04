@@ -49,13 +49,11 @@ Login/Logout(JWT)
 Oauth(with github) (https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/
 authorizing-oauth-apps)
 Oauth(with google)
-/////////////
 GraphQl API
-Paytm-Payment
-
-Chatapp
 NodeJs with postgres
-
+/////////////
+Paytm-Payment
+Chatapp
 FIREBASE
 AWS lambda micorservice
 --------NOT---------
@@ -304,3 +302,8 @@ install global package
 
 
 json-server --watch db.json --port 9811
+
+
+//postgress
+> pg_ctl -D /usr/local/var/postgres start
+> pg_ctl -D /usr/local/var/postgres stop
