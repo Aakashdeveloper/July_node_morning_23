@@ -51,7 +51,6 @@ authorizing-oauth-apps)
 Oauth(with google)
 GraphQl API
 NodeJs with postgres
-/////////////
 Paytm-Payment
 Chatapp
 FIREBASE
@@ -307,3 +306,8 @@ json-server --watch db.json --port 9811
 //postgress
 > pg_ctl -D /usr/local/var/postgres start
 > pg_ctl -D /usr/local/var/postgres stop
+
+
+npm i -g firebase
+
+https://github.com/Aakashdeveloper/Node-Interview-Question
